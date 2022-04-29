@@ -26,7 +26,7 @@ function taskcount(){
      document.querySelector('form').style.justifyContent='space-between'
      document.querySelector('form').style.flexDirection='row'
      document.querySelector('input').focus()
-     document.getElementById('myOl').scrollTop=document.getElementById('myOl').scrollHeight+3
+     document.getElementById('myOl').scrollTop=document.getElementById('myOl').scrollHeight
 }
 document.querySelector('#submit').addEventListener("click", showInput)
  //adding ol;
@@ -58,6 +58,7 @@ document.querySelector('input').addEventListener("keydown",function(event){
                             if(document.getElementById('myOl').childElementCount==0){
                                 document.querySelector('form').style.display='flex'
                                 document.getElementById('myOl').style.display='none'
+                                tasksArea.scrollTop=tasksArea.scrollHeight
                             }    
                     }
                 }
