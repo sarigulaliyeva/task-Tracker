@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@400;500;700;900&display=swap');
+/* DESKTOP */
+@media (min-width: 816px){
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+    button{
+        background: none;
+    }
+    h1{
+        font-weight: 900;
+        font-size: 2vw;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+        width: 24vw;
+    }
+    .yellow{
+        background-color: #FFDC40;
+        border-radius: 10px 10px 0px 0px;
+        height: 2vw;
+    }
+    .todolist{
+        justify-content: center;
+        display: flex;
+        margin: 1.71vw 0vw;
+    }
+    .filter{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.3vw;
+    }
+    #filterbtn{
+        width: 1.5vw;
+        height: 1.5vw;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        margin-right: 2.45vw;
+        border: none;
+    }
+    #filterbtn:hover{
+      cursor: pointer;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        height: 3.2vw;
+        margin-left: 4px;
+        padding-left: 7px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        }
+    #inpt{
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+    }
+    input{
+        border: none;
+        max-height: 2.2vw;
+        max-width: 13vw;
+        margin-top: 3px;
+        font-size: 1.1vw;  
+    }
+    .inputArea{
+        margin: 0px 1.1vw;
+        font-size: 1.1vw;
+    }
+    input:focus{
+        outline: none;
+    }
+    .clear{
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        width: 2.06vw;
+        height: 2.06vw;
+        margin-right: 0.7vw;
+        font-size: 1.2vw;
+        color: lightgray;
+}
+.clear:hover{
+  cursor: pointer;
+}
+    #submit{
+        border-radius: 71px;
+        background-color:#9953F1;
+        border: none;
+        height: 3.5vw;
+        width: 10.41vw;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 1vw;
+        padding-right: 0.9vw;
+        font-size: 1.1vw;
+        margin: 16px 7vw;
+    }
+    #submit img{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    #myOl{
+        overflow: auto;
+        max-height: 10vw;   
+        display: none;
+        padding: 0px 0.7vw;
+        display: flex;
+        flex-direction: column;
+}
+    #myOl::-webkit-scrollbar {
+        width: 5px;
+    }
+    #myOl::-webkit-scrollbar-thumb {
+        background: #909090;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar{height: 5px; width: 7px;}
+    #myOl::-webkit-scrollbar-track {
+        background: #FFFFFF;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: move;
+        margin-top: 1vw;
+        margin-bottom: 0.9vw;
+    }
+    #filterbtn:hover{
+        opacity: 1;
+    }
+    .delete{
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        width: 2.06vw;
+        height: 2.06vw;
+    }
+    .delete:hover{
+        margin-right: 3px;
+        background-color: #833AE0;
+        color: white;
+        width: 2.06vw;
+        height: 2.06vw;
+        transition: 0.5 all ease;
+    }
+    .clear:hover{
+        transition: all ease;
+        width: 2.06vw;
+        background-color: #833AE0;
+        color: white;
+        margin-right: 0.7vw;
+        height: 25px;
+    }
+    #submit:hover{
+        background-color: #873fe4;
+        cursor: pointer;
+        transform: translateY(-0.5vw);
+        box-shadow: 3px 3px 7px var(--box-shadow-bg-color);
+    }
+    .plus{
+        width: 3.5vw;
+        height: 3.5vw;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8a45e5;
+    }
+    #submit{
+        cursor: pointer;
+        transform: translateY(-0.5vw);
+        box-shadow: 0.3vw 0.3vw 0.7vw #ccc;
+    }
+  
+}
+/* MOBILE */
+@media screen and (min-width: 340px) and (max-width: 816px) {
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+    button{
+        background: none;
+        
+    }
+    h1{
+        font-weight: 900;
+        font-size: 5vw;
+    }
+    li{
+        margin-top: 2vw;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+        width: 70vw;
+    }
+    .yellow{
+        background-color: #FFDC40;
+        border-radius: 10px 10px 0px 0px;
+        height: 3vw;
+    }
+    .todolist{
+        justify-content: center;
+        display: flex;
+        margin: 10px 0px;
+    }
+    .filter{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.5vw;
+    }
+    #filterbtn{
+        border: none;
+        width: 8vw;
+        height: auto;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        margin-right: 0.5vw;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.8vw;
+        }
+    #inpt{
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+    }
+    input{
+        border: none;
+        height: 8vw;
+        font-size: 3vw;  
+    }
+    .inputArea{
+        margin: 0px 1.4vw;
+        font-size: 1.8vw;
+    }
+    input:focus{
+        outline: none;
+    }
+    .clear{
+        width: 3.82vw;
+        height: 3.82vw;
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        color: lightgray;
+}
+    #submit{
+        border-radius: 71px;
+        background-color: #833AE0;
+        border: none;
+        height: 8.5vw;
+        width: 23vw;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 2vw;
+        padding-right: 1.2vw;
+        font-size: 2.2vw;
+        margin: 4vw 23vw;
+    } 
+    #myOl{
+        overflow: auto;
+        max-height: 21vw;
+        display: none;
+        padding: 0px 0.9vw;
+        display: flex;
+        flex-direction: column;
+}
+    #myOl::-webkit-scrollbar {
+        width: 5px;
+    }
+    #myOl::-webkit-scrollbar-thumb {
+        background: #909090;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar{height: 5px; width: 7px;}
+    #myOl::-webkit-scrollbar-track {
+        background: #FFFFFF;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: move;
+        font-size: 3.5vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+    .delete{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+    }
+    .delete:hover{
+        margin-right: 0.5vw;
+        transition: 0.5 all ease;
+    }
+    .clear:hover{
+        transition: all ease;
+        margin-right: 0.5vw;
+    }
+    #submit:hover{
+        background-color: #873fe4;
+        cursor: pointer;
+        transform: translateY(-0.5vw);
+        box-shadow: 3px 3px 7px var(--box-shadow-bg-color);
+    }
+    .plus{
+        width: 8.5vw;
+        height: 8.5vw;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8a45e5;
+    }
+    #submit{
+        cursor: pointer;
+        transform: translateY(-0.5vw);
+    }
+    .clear:hover{
+      cursor: pointer;
+    }
+    #filterbtn:hover{
+      cursor: pointer;
+    }
+}
